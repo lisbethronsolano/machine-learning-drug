@@ -49,9 +49,13 @@ var env = { baseURL: defaultBaseURL, accessKey: defaultAccessKey };
 //  }
 //}
 var services = JSON.parse(process.env.VCAP_SERVICES || "{}");
+console.log('services', services);
 var pmServiceName = process.env.PA_SERVICE_LABEL ? process.env.PA_SERVICE_LABEL : 'pm-20';
+console.log('pmServiceName', pmServiceName);
 var service = (services[pmServiceName] || "{}");
+console.log('service', service);
 var credentials = service[0].credentials;
+console.log('credentials', credentials);
 if (credentials != null) {
 		env.baseURL = credentials.url;
 		env.accessKey = credentials.access_key;
