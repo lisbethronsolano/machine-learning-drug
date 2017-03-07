@@ -81,7 +81,7 @@ console.log('  URI  : ' + scoreURI);
 console.log('  Input: ' + JSON.stringify(req.body.input));
 console.log(' ');
 	try {
-		console.log('scoreUI', scoreUI)
+		// console.log('scoreUI', scoreUI)
 		var r = request.post(scoreURI, { json: true, body: req.body.input });
 		req.pipe(r);
 		r.pipe(res);
