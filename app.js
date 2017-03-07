@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 var port = (process.env.VCAP_APP_PORT || process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || process.env.HOST || 'localhost');
 
-// var defaultBaseURL = '<from your service instance on Bluemix>';
-// var defaultAccessKey = '<from your service instance on Bluemix>';
+var defaultBaseURL = '<from your service instance on Bluemix>';
+var defaultAccessKey = '<from your service instance on Bluemix>';
 // var defaultBaseURL = 'https://ibm-watson-ml.mybluemix.net';
 // var defaultAccessKey = 'wHQAzq74OrXQmQKnTm5Lb9heRYGUH7pVoKQMfn7JG9GPRbSEPWteQybiMjmpFscpHxGxQ3pIogjgEOjN0TGDTcL0h32gVzPkwMbmHXNpi+FQYUqQmv73SQJrb1WXWeZv';
 
