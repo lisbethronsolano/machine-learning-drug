@@ -1,0 +1,20 @@
+<div class="well base-color2 special-border">
+	<h3>Score Results</h3>
+  <hr class="special-border" />
+	<div class="body">
+		<br />
+		<table class="body table table-bordered light-color2">
+			<thead>
+				<tr>
+					<th ng-repeat="fname in rspHeader">{{fname}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="row in rspData">
+					<td ng-repeat="fval in row track by $index">{{fval}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<button type="button" class="btn btn-primary" ng-click="cancel()"><i class="glyphicon glyphicon-ok"></i>&nbsp;Close&nbsp;</button>&nbsp;
+	</div>
+</div>
